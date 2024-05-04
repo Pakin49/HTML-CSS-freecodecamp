@@ -1,5 +1,18 @@
 label{
-  display:block;
-  margin: 10px;
+  text-align:center;
+  display: block;
 }
 
+fieldset{
+  margin:10px 20px;
+  padding:10px;
+}
+
+label[type="radio"]{
+  display: inline-block;
+}
+
+input{
+  text-align:center;
+  margin:10px;
+}
