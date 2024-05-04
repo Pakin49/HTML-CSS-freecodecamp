@@ -8,25 +8,24 @@
   <body>
     <div id="heading">
       <h1 id="title">ICCI Coures Registration Survey</h1>
-      <p id ="discription">Which courses would you like to register next trimester</p>
+      <p id ="description">Which courses would you like to register next trimester</p>
     </div>
     <div>
       <form id="survey-form" >
         <fieldset>
           <label id="name-label" for="name"> Name
-            <input type="text" id = "name" name="name" placeholder="Pakin Panawattanakul">
+            <input type="text" id = "name" value="name" placeholder="Pakin Panawattanakul" required>
           </label>
           <label for="email" id="email-label"> Email
-            <input type="email" id="email" name="email" placeholder="pakin.pan@student.mahidol.edu">
+            <input type="email" id="email" value="email" placeholder="pakin.pan@student.mahidol.edu" required>
           </label>
-          <label for="number" id="number-lebel">Student ID
-            <input type="number" id="number" name="student-id" placeholder="6580043">
+          <label for="number" id="number-label">Student ID
+            <input type="number" id="number" value="student-id" placeholder="6580043" min="6" max="7" required>
           </label>
-          
         </fieldset>
         <fieldset>
-          <label for="drop-down"> Year
-            <select id="drop-down" name="Year">
+          <label for="dropdown"> Year
+            <select id="dropdown" name="Year">
               <option id="63">63</option>
               <option id="64">64</option>
               <option id="65">65</option>
@@ -34,22 +33,26 @@
             </select>
           </label>
           <label type="radio">
-            <input type="radio" name="term" checked> Term 1
+            <input type="radio" name="term" value="term1" checked> Term 1
           </label>
           <label type="radio">
-            <input type="radio" name="term"> Term 2
+            <input type="radio" name="term" value="term2"}> Term 2
           </label>
           <label type="radio">
-            <input type="radio" name="term"> Term 3
+            <input type="radio" name="term" value="term3"> Term 3
           </label>
         </fieldset>
-        <fieldset>
-          <label><input type="checkbox"> Programming Paradigm</label>
-          <label><input type="checkbox"> Computer Architecture</label>
-          <label><input type="checkbox"> System Programming</label>
-          <label><input type="checkbox"> Micro Prosessing</label>
+        <fieldset class="checkbox-fieldset">
+          <label><input type="checkbox" value="Programming Paradigm"> Programming Paradigm</label>
+          <label><input type="checkbox" value="Computer Architecture"> Computer Architecture</label>
+          <label><input type="checkbox" value="System Programming"> System Programming</label>
+          <label><input type="checkbox" Value="Micro Prosessor"> Micro Prosessor</label>
+          <label><input type="checkbox" value="Data Structure and Algorithm"> Data Structure & Algorithm</label>
+          <label><input type="checkbox" value="Software Engineering"> Software Engineering</label>
         </fieldset>
-        <input type="submit">
+        <textarea>
+        </textarea>
+        <input id="submit" type="submit">
       </form>
     </div>
     
